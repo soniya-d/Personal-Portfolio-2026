@@ -1,0 +1,233 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e7e7e7;
+    min-height: 100vh;
+    background: #111;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.back-vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.project-container {
+    max-width: 900px;
+    margin: 4rem auto 2rem auto;
+    padding: 2.5rem 2rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+
+.back-btn {
+    display: inline-block;
+    color: #b066ff;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.back-btn:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ...existing code... */
+
+.project-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.03em;
+    position: relative;
+    background: linear-gradient(90deg, #00c6fb 0%, #005bea 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 18px rgba(255,255,255,0.7));
+    /* For white glow */
+    /* For moving glow */
+    overflow: visible;
+}
+
+
+/* GitHub logo fixed to bottom right */
+.github-fab {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 100;
+    font-size: 2.5rem;
+    color: #00c6fb;
+    background: rgba(17,17,17,0.7);
+    border-radius: 50%;
+    padding: 14px 16px 10px 16px;
+    box-shadow: 0 0 18px #00c6fb44;
+    transition: color 0.2s, box-shadow 0.2s, background 0.2s;
+    text-align: center;
+    display: inline-block;
+}
+.github-fab:hover {
+    color: #fff;
+    background: #00c6fb;
+    box-shadow: 0 0 32px #00c6fb99;
+}
+
+/* ...existing code... */
+
+.github-logo img {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    transition: filter 0.2s;
+    filter: grayscale(1) brightness(2);
+}
+.github-logo:hover img {
+    filter: none;
+}
+
+.project-section {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+    background: transparent;
+}
+
+.project-section.reverse {
+    flex-direction: row-reverse;
+}
+/* ...existing code... */
+
+/* Turquoise glow rectangle with curved edges */
+.project-image-glow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(64, 224, 208, 0.3); /* Turquoise with transparency */
+    border-radius: 24px;
+    box-shadow: 0 0 40px 10px white;
+    padding: 24px;
+    margin-bottom: 32px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-image-main {
+    border-radius: 18px;
+    max-width: 350px;
+    width: 100%;
+    display: block;
+}
+
+/* Hide bullet points initially, then fade in */
+.bullet-hidden {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.project-details {
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+/* ...existing code... */
+
+.project-details ul {
+    margin: 0 0 1rem 1.2rem;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #e7e7e7;
+}
+
+.project-details li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+    transition: transform 0.18s cubic-bezier(.4,2,.6,1), background 0.18s;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 2px 6px;
+}
+
+.project-details li:hover,
+.project-details li:focus {
+    transform: scale(1.13);
+    background: transparent;
+    outline: none;
+}
+.github-link {
+    color: #b066ff;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.github-link:hover {
+    color: #fff;
+}
+
+.project-image img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(176, 102, 255, 0.15);
+    background: #222;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+.project-image img:hover {
+    transform: scale(1.03) rotate(-2deg);
+}
+
+
+@media (max-width: 900px) {
+    .project-container {
+        padding: 1.5rem 0.5rem;
+    }
+    .project-section,
+    .project-section.reverse {
+        flex-direction: column !important;
+        gap: 1.5rem;
+    }
+    .project-title {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .project-image img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-container {
+        margin: 1.5rem 0.2rem;
+        padding: 1rem 0.2rem;
+    }
+    .project-title {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookNest Project</title>
+    <link rel="stylesheet" href="booknest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <video class="back-vid" autoplay loop muted playsinline>
+        <source src="../videos/new-galaxy.mp4" type="video/mp4">
+        <source src="../videos/galaxy.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>    
+    <div class="project-container">
+        <a href="../index.html" class="back-btn" title="Back to Home">&#8592; Back</a>
+        <h1 class="project-title">
+            BookNest Web Application in Java &amp; Spring Boot
+        </h1>    
+        <div class="project-image-glow">
+            <img src="genetic-framework-demo.png" alt="Genetic Algorithm Visualization" class="project-image-main">
+        </div>
+        <div class="project-details bullet-hidden">
+            <ul>
+                <li>Built a full-stack web app for tracking books, enabling users to search books via the Open Library API and interact with DataStax Cassandra for database management.</li>
+                <li>Implemented OAuth2-based GitHub login for secure user authentication, enabling personalized features such as adding books to a "My Books" page.</li>
+                <li>Enabled users to track reading progress by recording the start and finish dates for each book.</li>
+                <li>Designed and implemented the backend using Spring Boot, ensuring scalability and efficient data handling.</li>
+                <li>Utilized a modular design with Java and XML for API interactions, while employing HTML for the front-end interface.</li>
+                <li>Leveraged Cassandra's NoSQL database to store and retrieve complex data structures such as book lists, author information, and user book-tracking data.</li>
+            </ul>
+        </div>
+    </div>
+    <a href="https://github.com/" target="_blank" class="github-fab" title="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+    <script>
+        // Reveal bullet points after 1 second
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.project-details').classList.remove('bullet-hidden');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

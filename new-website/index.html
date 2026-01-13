@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice of my Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted playsinline>
+            <source src="videos/new-galaxy.mp4" type="video/mp4">
+            <source src="videos/galaxy.webm" type="video/webm">
+        </video>        
+        <header>
+            <h1><img src="images/logo.png" alt="logo" class="logo"></h1>
+            <nav>
+                    <a data-aos="fade-down" data-aos-duration="1500" href="#About">About</a>
+                    <a data-aos="fade-down" data-aos-duration="2000" href="#Skills">Skills</a>
+                    <a data-aos="fade-down" data-aos-duration="2500" href="#projects">Projects</a>
+                    <a data-aos="fade-down" data-aos-duration="3000" href="#Current">Currently</a>
+            </nav>
+            <nav><a data-aos="fade-down" data-aos-duration="1500" class="btn-signing" href="#contact">Let's Connect!</a></nav>
+        </header>
+        <main>
+            <div class="content">
+                
+                <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="1500" class="tag-box">
+                    <div class="tag">Hello World ＾-＾</div>
+                </div>
+
+                <h1 data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2000">My Name is... <br>SONIYA DASADIA</h1>
+
+                <p data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2500" class="description">
+                    3rd year Computer Science student at Wilfrid Laurier University with a passion in finding solutions to problems around me using technology. 
+                </p>
+                <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                    <a href="#" class="btn-get-started">Read More &gt;</a>
+                </div>
+            </div>
+            
+            <section id="About">
+                <h2 data-aos="fade-right" data-aos-duration="1500" class="section-title">BACKSTORY</h2>
+                <div class="about-content">
+                    <div data-aos="fade-right" data-aos-duration="2000" class="about-text">
+                        <p>Hello! I'm Soniya Dasadia, a 3rd year Computer Science student at Wilfrid Laurier University. I have a passion for leveraging technology to solve real-world problems and create innovative solutions. My journey in tech has been driven by curiosity and a desire to make a positive impact.</p>
+                        <p>Throughout my academic career, I've honed my skills in various programming languages and frameworks, and I've had the opportunity to work on diverse projects that have challenged me to think critically and creatively. I'm particularly interested in web development, AI, and data science.</p>
+                        <p>When I'm not coding, I enjoy exploring new technologies, reading about advancements in the tech world, and collaborating with like-minded individuals on exciting projects. I'm always eager to learn and grow, both personally and professionally.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" class="about-image">
+                        <img src="images/profile-picture.jpg" alt="Soniya Dasadia" class="profile-picture">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <spline-viewer data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" data-aos-duration="3000" class= "robot-3d" url="https://prod.spline.design/LnZAjZBf8nrLjP8J/scene.splinecode">
+    </spline-viewer>
+
+    <section id="projects" class="projects-section">
+            <spline-viewer
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                class="projects-spline"
+                url="https://prod.spline.design/8YB7veGmA5mHwsvF/scene.splinecode">
+            </spline-viewer>
+    </section>
+    
+    <section id="contact">
+        <div class="contact-icons">
+            <a href="mailto:soniya.dasadia@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/soniya-dasadia-28a04b248/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/soniya-d" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.71/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+ 
